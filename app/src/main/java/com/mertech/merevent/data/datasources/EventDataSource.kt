@@ -1,6 +1,6 @@
 package com.mertech.merevent.data.datasources
 
-import com.mertech.merevent.domain.Event
+import com.mertech.merevent.domain.event.Event
 
 interface EventDataSource {
     suspend fun addEvent(event: Event)

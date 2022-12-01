@@ -1,6 +1,6 @@
 package com.mertech.merevent.data.mappers
 
-import com.mertech.merevent.domain.Event
+import com.mertech.merevent.domain.event.Event
 import com.mertech.merevent.framework.db.EventEntity
 
 fun EventEntity.toDomain(): Event {

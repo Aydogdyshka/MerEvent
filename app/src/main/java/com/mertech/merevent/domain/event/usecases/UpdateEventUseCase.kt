@@ -1,7 +1,7 @@
-package com.mertech.merevent.usecases
+package com.mertech.merevent.domain.event.usecases
 
 import com.mertech.merevent.data.repository.EventRepository
-import com.mertech.merevent.domain.Event
+import com.mertech.merevent.domain.event.Event
 
 class UpdateEventUseCase(
     private val repository: EventRepository

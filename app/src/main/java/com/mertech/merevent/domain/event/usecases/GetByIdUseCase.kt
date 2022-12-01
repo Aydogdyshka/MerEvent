@@ -1,4 +1,4 @@
-package com.mertech.merevent.usecases
+package com.mertech.merevent.domain.event.usecases
 
 import com.mertech.merevent.data.repository.EventRepository
 

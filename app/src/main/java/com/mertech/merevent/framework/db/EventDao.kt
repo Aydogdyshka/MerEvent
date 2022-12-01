@@ -5,7 +5,6 @@ import androidx.room.OnConflictStrategy.REPLACE
 
 @Dao
 interface EventDao {
-
     @Insert(onConflict = REPLACE)
     suspend fun addEvent(eventEntity: EventEntity)
 

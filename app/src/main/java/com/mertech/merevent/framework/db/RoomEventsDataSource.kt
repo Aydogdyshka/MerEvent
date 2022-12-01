@@ -3,11 +3,12 @@ package com.mertech.merevent.framework.db
 import com.mertech.merevent.data.datasources.EventDataSource
 import com.mertech.merevent.data.mappers.toDomain
 import com.mertech.merevent.data.mappers.toEntity
-import com.mertech.merevent.domain.Event
+import com.mertech.merevent.domain.event.Event
+import javax.inject.Inject
 
-class RoomEventsDataSource(
+class RoomEventsDataSource @Inject constructor(
     private val eventDao: EventDao
-): EventDataSource {
+    ): EventDataSource {
 
     override suspend fun addEvent(event: Event) {
         eventDao.addEvent(event.toEntity())

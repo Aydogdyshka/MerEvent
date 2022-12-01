@@ -1,7 +1,6 @@
 package com.mertech.merevent.data.repository
 
-import androidx.lifecycle.LiveData
-import com.mertech.merevent.domain.Event
+import com.mertech.merevent.domain.event.Event
 
 interface EventRepository {
     suspend fun addEvent(event: Event)

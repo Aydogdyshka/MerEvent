@@ -1,4 +1,4 @@
-package com.mertech.merevent.domain
+package com.mertech.merevent.domain.event
 
 
 data class Event(

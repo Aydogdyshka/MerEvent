@@ -1,9 +1,10 @@
 package com.mertech.merevent.data.repository
 
 import com.mertech.merevent.data.datasources.EventDataSource
-import com.mertech.merevent.domain.Event
+import com.mertech.merevent.domain.event.Event
+import javax.inject.Inject
 
-class EventRepositoryImpl(private val eventDataSource: EventDataSource): EventRepository {
+class EventRepositoryImpl @Inject constructor(private val eventDataSource: EventDataSource): EventRepository {
 
     override suspend fun addEvent(event: Event) {
         eventDataSource.addEvent(event)

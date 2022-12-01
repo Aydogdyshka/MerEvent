@@ -4,4 +4,5 @@ import android.app.Application
 
 class MerEventApplication: Application() {
 
+
 }
